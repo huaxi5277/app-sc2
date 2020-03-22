@@ -1,0 +1,123 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/tabBar/information/information",
+			"style": {
+				"navigationBarTitleText": "资讯",
+				"app-plus":{    // 取消默认的状态栏
+					"titleNView": false,
+					"bounce":"none"
+				}
+			}
+		},
+		{
+			"path":"pages/tabBar/competition/competition",
+			"style":{
+				"navigationBarTitleText":"赛事",
+				"app-plus":{
+					"titleNView": false,
+					"bounce":"none"
+				}
+			}
+		},
+		{
+			"path":"pages/tabBar/research/research",
+			"style":{
+				"navigationBarTitleText":"攻略"
+			}
+		},
+		{
+			"path":"pages/tabBar/user/dynamics",
+			"style":{
+				"navigationBarTitleText":"发布动态"
+			}
+		},
+		{
+			"path":"pages/tabBar/dynamics/dynamics",
+			"style":{
+				"navigationBarTitleText":"动态"
+			}
+		},
+		{
+			"path":"pages/tabBar/user/user",
+			"style":{
+				"navigationBarTitleText":"我的"
+			}
+		},
+		{
+			"path": "pages/tabBar/user/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/tabBar/user/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path":"pages/tabBar/user/profile",
+			"style":{
+				"navigationBarTitleText":"个人信息"
+			}
+		},
+		{
+			"path":"pages/tabBar/user/collection",
+			"style":{
+				"navigationBarTitleText":"我的收藏"
+			}
+		},
+		{
+			"path":"pages/tabBar/user/comment",
+			"style":{
+				"navigationBarTitleText":"我的评论"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"color":"#8a8a8a",
+		"selectedColor": "#ab4ce0",
+		"borderStyle":"black",
+		"backgroundColor":"#FFFFFF",
+		"list":[
+			{
+				"pagePath":"pages/tabBar/information/information",
+				"iconPath":"static/tabBar/资讯2.png",
+				"selectedIconPath":"static/tabBar/资讯.png",
+				"text":"资讯"
+			},
+			
+			{
+				"pagePath":"pages/tabBar/competition/competition",
+				"iconPath":"static/tabBar/赛事2.png",
+				"selectedIconPath":"static/tabBar/赛事.png",
+				"text":"赛事"
+			},
+			{
+				"pagePath":"pages/tabBar/research/research",
+				"iconPath":"static/tabBar/攻略2.png",
+				"selectedIconPath":"static/tabBar/攻略.png",
+				"text":"攻略"
+			},
+			{
+				"pagePath":"pages/tabBar/dynamics/dynamics",
+				"iconPath":"static/tabBar/动态2.png",
+				"selectedIconPath":"static/tabBar/动态.png",
+				"text":"动态"
+			},
+			{
+				"pagePath":"pages/tabBar/user/user",
+				"iconPath":"static/tabBar/我的2.png",
+				"selectedIconPath":"static/tabBar/我的.png",
+				"text":"我的"
+			}
+		]
+	}
+}
