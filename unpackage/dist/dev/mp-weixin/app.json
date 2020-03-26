@@ -10,7 +10,8 @@
     "pages/tabBar/user/register",
     "pages/tabBar/user/profile",
     "pages/tabBar/user/collection",
-    "pages/tabBar/user/comment"
+    "pages/tabBar/user/comment",
+    "pages/tabBar/information/detail"
   ],
   "subPackages": [],
   "window": {
@@ -57,5 +58,6 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap47.json"
 }

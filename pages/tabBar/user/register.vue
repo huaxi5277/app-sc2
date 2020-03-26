@@ -45,7 +45,7 @@
 				if (this.toCheck(this.email, this.password,this.name)) {
 					// 将要发起请求 
 					uni.request({
-						url: 'http://47.96.156.131:5000/keep/users/register',
+						url: 'http://localhost:5000/keep/users/register',
 						method: 'POST',
 						header: {},
 						data: {
@@ -72,7 +72,7 @@
 			},
 			loginToRegister() {
 				uni.navigateTo({
-					url: './register'
+					url: './login'
 				})
 			},
 			toCheck(username, password,name) {

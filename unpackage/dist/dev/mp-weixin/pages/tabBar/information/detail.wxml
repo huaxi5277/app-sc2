@@ -1,0 +1,1 @@
+<view class="detail-wrap data-v-513f27aa"><view class="content-wrap data-v-513f27aa"><block wx:for="{{msgData}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view class="content-wrap-item data-v-513f27aa"><text class="data-v-513f27aa">{{item[index]}}</text></view></block></view></view>

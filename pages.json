@@ -3,11 +3,11 @@
 		{
 			"path": "pages/tabBar/information/information",
 			"style": {
-				"navigationBarTitleText": "资讯",
-				"app-plus":{    // 取消默认的状态栏
-					"titleNView": false,
-					"bounce":"none"
-				}
+				"navigationBarTitleText": "资讯"
+				// "app-plus":{    // 取消默认的状态栏
+				// 	"titleNView": false,
+				// 	"bounce":"none"
+				// }
 			}
 		},
 		{
@@ -18,6 +18,12 @@
 					"titleNView": false,
 					"bounce":"none"
 				}
+			}
+		},
+		{
+			"path":"pages/tabBar/dynamics/publicDetail",
+			"style":{
+				"navigationBarTitleText":"详细动态"
 			}
 		},
 		{
@@ -35,9 +41,43 @@
 		{
 			"path":"pages/tabBar/dynamics/dynamics",
 			"style":{
-				"navigationBarTitleText":"动态"
+				"navigationBarTitleText":"动态",
+				
+				"app-plus":{
+					"titleNView": {
+						"buttons":[
+							{
+								"text": "\ue712",
+								"fontSize":"28px",
+								"fontSrc":"/static/iconfont.ttf",
+								"float":"right",
+								"color":"#d4237a"
+							}
+						]
+					}
+				}
 			}
 		},
+		
+		{
+			"path":"pages/tabBar/dynamics/publish",
+			"style":{
+				"navigationBarTitleText":"发表动态",
+				"app-plus":{
+					"titleNView": {
+						"buttons":[
+							{
+								"text": "发布",
+								"fontSize":"16px",
+								"float":"right",
+								"color":"#f4ea2a"
+							}
+						]
+					}
+				}
+			}
+		},
+		
 		{
 			"path":"pages/tabBar/user/user",
 			"style":{
@@ -72,6 +112,12 @@
 			"path":"pages/tabBar/user/comment",
 			"style":{
 				"navigationBarTitleText":"我的评论"
+			}
+		},
+		{
+			"path":"pages/tabBar/information/detail",
+			"style":{
+				"navigationBarTitleText":"详情"
 			}
 		}
 	],

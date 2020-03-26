@@ -6,9 +6,13 @@ const emailReg = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/
 const pwdReg = /^.{6,16}$/
 const inviteCodeReg = /^[a-zA-Z0-9]{6,16}$/
 const name = /^([a-zA-Z0-9]){3,8}$/
+const text = /^([a-zA-Z0-9]){1,}$/
 export default {
 	isNumber: function(val) {
 		return numberReg.test(val)
+	},
+	isText: function(val) {
+		return text.test(val)
 	},
 	isName: function(val) {
 		return name.test(val)

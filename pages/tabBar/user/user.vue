@@ -141,7 +141,7 @@
 						success: function(res) {
 							pathToBase64(res.tempFilePaths[0]).then((base64) => {
 								uni.request({
-									url: "http://47.96.156.131:5000/keep/users/avator",
+									url: "http://localhost:5000/keep/users/avator",
 									method: "POST",
 									data: {
 										_id: that.id,
@@ -193,7 +193,7 @@
 						// 拿着 token  去 请求 current  拿到 id 
 						// 先发起一个请求 
 						uni.request({
-							url: "http://47.96.156.131:5000/keep/users/willjwt",
+							url: "http://localhost:5000/keep/users/willjwt",
 							method: "POST",
 							data: {
 								current: currentTime,
@@ -202,7 +202,7 @@
 							success: (result) => {
 								if (result.data.callbackMsg) {
 									uni.request({
-										url: "http://47.96.156.131:5000/keep/users/current",
+										url: "http://localhost:5000/keep/users/current",
 										method: "GET",
 										header: {
 											'Authorization': JSON.parse(res.data).Token
@@ -210,6 +210,7 @@
 										success: (res) => {
 											
 											this.id = res.data.id
+											uni.setStorageSync("_id", res.data.id)
 											this.name = res.data.name
 											this.email = res.data.email
 											this.userImg = res.data.avatar

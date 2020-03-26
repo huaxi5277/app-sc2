@@ -42,7 +42,7 @@
 						password: this.password
 					}
 					uni.request({
-						url: 'http://47.96.156.131:5000/keep/users/login',
+						url: 'http://localhost:5000/keep/users/login',
 						method: 'POST',
 						header: {
 							'content-type' : 'application/json'
@@ -67,6 +67,7 @@
 							if (res.data.success) {
 								//  把 token 存到本地
 								const token = res.data.token
+								
 								const tiatok = {
 									Token : token,
 									Time : Date.now()/1000
